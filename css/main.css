@@ -442,6 +442,171 @@ h2 {
 .about-content__img img:nth-child(3) {
   margin-right: 18.55vw;
 }
+/* Achivements */
+.achivements {
+  background-color: var(--pink);
+  padding-bottom: 7.345%;
+  padding-top: 8.02%;
+}
+.container-achivements {
+  padding-left: 6.41%;
+  padding-right: 7.915%;
+}
+.achivements-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.achivements-certificates {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.certificates-title {
+  position: relative;
+
+  color: var(--main-title);
+  font-family: "Lobster", cursive;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5.6px;
+  margin-bottom: 14.65%;
+}
+.certificates-title::before {
+  content: "";
+  position: absolute;
+  left: 230px;
+  top: 95px;
+  width: 562px;
+  height: 33px;
+
+  background-image: url("../img/line5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.certificates-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 60px;
+
+  margin-bottom: 10.95%;
+}
+.achivements-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviews-title {
+  position: relative;
+
+  color: var(--main-title);
+  font-family: "Lobster", cursive;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 5.6px;
+
+  margin-bottom: 8.15%;
+}
+.reviews-title::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 87px;
+  width: 358px;
+  height: 21px;
+
+  background-image: url("../img/line6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 60px;
+
+  margin-bottom: 4.85%;
+}
+
+.reviews-item {
+  position: relative;
+  width: 529px;
+  height: 377px;
+  border-radius: 5px;
+  padding: 47px 57px;
+
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: -8px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+.reviews-item::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: -40px;
+  width: 83.396px;
+  height: 75.973px;
+
+  background-image: url("../img/quotes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews-item p {
+  color: var(--accent-th);
+  font-family: "Sora", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+.reviews-item h3 {
+  color: var(--accent);
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+
+  margin-left: 267px;
+}
+
+.reviews-items__btns {
+  display: flex;
+  justify-content: space-between;
+
+  width: 688px;
+  height: 12px;
+}
+.reviews-items__btns button {
+  width: 200px;
+  height: 12px;
+
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  background: var(--button-color-bg);
+}
 
 @media (max-width: 1786px) {
   .nav-container {
@@ -480,13 +645,33 @@ h2 {
 
     padding-bottom: 3%;
   }
+  /* About */
+  .about {
+    padding-bottom: 0;
+  }
+  .about-container {
+    padding-bottom: 0;
+    min-height: 800px;
+  }
   .about-content__img {
     justify-content: center;
     row-gap: 40px;
+    margin-bottom: 2%;
   }
   .about-content p {
     font-size: 16px;
     line-height: 26px;
+  }
+  /* Achivements */
+  .certificates-items {
+    justify-content: center;
+  }
+  .reviews-items {
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-title {
+    margin-bottom: 15%;
   }
 }
 @media (max-width: 940px) {
@@ -528,6 +713,11 @@ h2 {
   .main-btn-recording {
     padding: 45px 144px;
     font-size: 40px;
+  }
+  /* Achivements */
+  .certificates-title::before {
+    top: 180px;
+    left: 0;
   }
 }
 @media (max-width: 905px) {
@@ -597,6 +787,114 @@ h2 {
   /* About */
   .about-content__img {
     justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Achivements */
+  .container-achivements {
+    padding-left: 4.41%;
+    padding-right: 5.915%;
+  }
+  .achivements-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .achivements-certificates {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .certificates-title {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .certificates-title::before {
+    left: 0;
+    top: 88px;
+    width: 282px;
+    height: 13px;
+  }
+  .certificates-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 60px;
+
+    margin-bottom: 10.95%;
+  }
+  .achivements-reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20%;
+  }
+  .reviews-title::before {
+    left: 0;
+    top: 41px;
+    width: 172px;
+    height: 10px;
+  }
+  .reviews-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 60px;
+
+    margin-bottom: 4.85%;
+  }
+
+  .reviews-item {
+    width: 290px;
+    height: 230px;
+    border-radius: 5px;
+    padding: 25px 35px;
+  }
+  .reviews-item::before {
+    left: 20px;
+    top: -20px;
+    width: 40px;
+    height: 38px;
+  }
+  .reviews-item p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .reviews-item h3 {
+    font-size: 15px;
+    line-height: 20px;
+
+    margin-left: 125px;
+  }
+
+  .reviews-items__btns {
+    width: 300px;
+    height: 6px;
+  }
+  .reviews-items__btns button {
+    width: 90px;
+    height: 6px;
   }
 }
 @media (max-width: 542px) {
